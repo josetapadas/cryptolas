@@ -1,0 +1,10 @@
+<div class="position-item">
+  <div class="position-amount">amount: <%= position.amount %> BTC</div>
+  <div class="position-current-value">current: <%= position.current_value %> CHF</div>
+  <div class="position-fee-value">fee: <%= position.fee_value %> CHF</div>
+  <div class="position-real-value">paid: <%= position.real_value %> CHF</div>
+  <div class="position-action"><%= position.action %></div>
+  <div class="position-created-at"><%= position.created_at %></div>
+  <div class="position-wallet"><%= link_to position.wallet.name, portfolio_wallet_path(position.wallet.portfolio_id, position.wallet.id) %></div>
+   
+</div>

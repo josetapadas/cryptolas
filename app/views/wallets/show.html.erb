@@ -1,0 +1,9 @@
+<h1><%= @current_wallet.name %></h1>
+<h2><%= @current_wallet.address %></h2>
+<hr>
+<div class="positions">
+  <% @positions.each do |position| %>
+    <%= render partial: "shared/position", locals: { position: position } %>
+    <hr>
+  <% end %>
+</div>

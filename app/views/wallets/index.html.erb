@@ -1,0 +1,5 @@
+<h1>Wallets</h1>
+<hr>
+<% @wallets.each do |wallet| %>
+  <%= render partial: "wallet_item", locals: { wallet: wallet } %>
+<% end %>

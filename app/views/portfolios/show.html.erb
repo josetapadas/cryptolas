@@ -1,0 +1,8 @@
+<h1><%= @current_portfolio.name %></h1>
+<hr>
+<div class="positions">
+  <% @positions.each do |position| %>
+    <%= render partial: "shared/position", locals: { position: position } %>
+    <hr>
+  <% end %>
+</div>
